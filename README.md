@@ -26,21 +26,23 @@ This repository contains the official implementation of the paper:
    git clone [https://github.com/your-username/repo-name.git](https://github.com/your-username/repo-name.git)
    cd repo-name
    
-🚀 Training
-Data Preparation
+## 🚀 Training
+
+### Data Preparation
+
 data/
 ├── DOTA/
 │   ├── train/
 │   ├── val/
 │   └── annotations/
 
-Single GPU Training
+### Single GPU Training
 python tools/train.py configs/std/std_r50_1x_dota.py
 
-⚡ Inference / Testing
+## ⚡ Inference / Testing
 python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
 
-🖊️ Citation
+## 🖊️ Citation
 If you find this project useful in your research, please consider citing our paper:
 @inproceedings{zhang2024subspace,
   title={Subspace-decoupled Topology Distillation for Remote Sensing Object Detection},
