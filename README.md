@@ -25,3 +25,30 @@ This repository contains the official implementation of the paper:
    ```bash
    git clone [https://github.com/your-username/repo-name.git](https://github.com/your-username/repo-name.git)
    cd repo-name
+   
+🚀 Training
+Data Preparation
+data/
+├── DOTA/
+│   ├── train/
+│   ├── val/
+│   └── annotations/
+
+Single GPU Training
+python tools/train.py configs/std/std_r50_1x_dota.py
+
+⚡ Inference / Testing
+python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
+
+🖊️ Citation
+If you find this project useful in your research, please consider citing our paper:
+@inproceedings{zhang2024subspace,
+  title={Subspace-decoupled Topology Distillation for Remote Sensing Object Detection},
+  author={Zhang, San and Li, Si and Wang, Wu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages={1234--1243},
+  year={2024}
+}
+
+Acknowledgement
+This project is based on MMDetection and GCD. Thanks for their excellent work.
