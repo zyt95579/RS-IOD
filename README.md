@@ -1,5 +1,5 @@
 # RS-IOD
-RS-IOD: Overcoming Catastrophic Forgetting in Incremental Object Detection for Remote Sensing
+STAR-IOD: Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection
 # Subspace-decoupled Topology Distillation (STD)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
