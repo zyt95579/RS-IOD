@@ -1,7 +1,7 @@
-# RS-IOD
-STAR-IOD: Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection
-# Subspace-decoupled Topology Distillation (STD)
+# RS-IOD：Scale-decoupled Topology Alignment with Pseudo-label Refinement for Remote Sensing Incremental Object Detection
 
+![STAR-IOD Framework](overall.png)
+*Figure 1: Overview of the STAR-IOD framework. It consists of two key components: Subspace-decoupled Topology Distillation (STD) for aligning scale-specific topological structures, and Clustering-driven Pseudo-label Generator (CPG) for adaptive reliable supervision.*
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains the official implementation of the paper:
