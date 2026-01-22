@@ -41,6 +41,8 @@ python tools/train.py configs/std/std_r50_1x_dota.py
 
 ## ⚡ Inference / Testing
 python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
+## Acknowledgement
+Our code is based on the project MMDetection. Thanks to the work [GCD] {https://github.com/Never-wx/GCD}.
 
 ## 🖊️ Citation
 If you find this project useful in your research, please consider citing our paper:
