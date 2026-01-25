@@ -43,26 +43,22 @@ data/
 ### GPU Training
 ```text
 # Phase 1 训练
-CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase1.py 4
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior/dior_phase1.py 4
 
 # Phase 2 训练 (开启混合精度训练 --amp)
-CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase2.py 4 --amp
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior/dior_phase2.py 4 --amp
 ```
 
 ## ⚡ Inference / Testing
-python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
+```text
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh ./configs/gdino_inc/dior/dior_phase1.py ./work_dirs/dior_phase1/epoch_12.pth 4 --cfg-options test_evaluator.classwise=True
+```
 ## Acknowledgement
 Our code is based on the project MMDetection. Thanks to the work [GCD](https://github.com/Never-wx/GCD).
 
 ## 🖊️ Citation
 If you find this project useful in your research, please consider citing our paper:
-@inproceedings{zhang2024subspace,
-  title={Subspace-decoupled Topology Distillation for Remote Sensing Object Detection},
-  author={Zhang, San and Li, Si and Wang, Wu},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={1234--1243},
-  year={2024}
-}
+
 
 Acknowledgement
 This project is based on MMDetection and GCD. Thanks for their excellent work.
