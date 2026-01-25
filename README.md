@@ -24,7 +24,9 @@ Remote sensing imagery typically arrives in the form of continuous data streams.
 
    
 ## 🚀 Training
-
+1. **Download Dataset**: 
+   Please download the DOTA-IOD dataset from the following link:
+   - **Link**: [Baidu Netdisk](https://pan.baidu.com/s/1MyQVHgKVMPb7zBR1ImKF-Q?pwd=y3bu) (Password: `y3bu`)
 ### Data Preparation
 
 data/
