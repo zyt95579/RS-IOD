@@ -14,7 +14,7 @@ Remote sensing imagery typically arrives in the form of continuous data streams.
 
 ### Requirements
 * conda create -n STAR python=3.8 -y
-* source activate GCD
+* source activate STAR
 * pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 * pip install -U openmim
 * mim install mmengine==0.8.5
@@ -30,6 +30,7 @@ Remote sensing imagery typically arrives in the form of continuous data streams.
    - **DIOR-IOD Link**: [[Baidu Netdisk](https://pan.baidu.com/s/1ux_L-Kt3Pw0UJWUZAt0x1w?pwd=atgs) (Password: `atgs`)
 ### Data Preparation
 
+```text
 data/
 ├── DOTA/
 │   ├── train/
