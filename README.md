@@ -41,11 +41,13 @@ data/
 │   └── annotations/
 ```
 ### GPU Training
+```text
 # Phase 1 训练
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase1.py 4
 
 # Phase 2 训练 (开启混合精度训练 --amp)
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase2.py 4 --amp
+```
 
 ## ⚡ Inference / Testing
 python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
