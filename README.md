@@ -29,7 +29,6 @@ Remote sensing imagery typically arrives in the form of continuous data streams.
    - **DOTA-IOD Link**: [Baidu Netdisk](https://pan.baidu.com/s/1MyQVHgKVMPb7zBR1ImKF-Q?pwd=y3bu) (Password: `y3bu`)
    - **DIOR-IOD Link**: [[Baidu Netdisk](https://pan.baidu.com/s/1ux_L-Kt3Pw0UJWUZAt0x1w?pwd=atgs) (Password: `atgs`)
 ### Data Preparation
-
 ```text
 data/
 ├── DOTA/
@@ -40,6 +39,7 @@ data/
 │   ├── train/
 │   ├── val/
 │   └── annotations/
+
 ### GPU Training
 # Phase 1 训练
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase1.py 4
