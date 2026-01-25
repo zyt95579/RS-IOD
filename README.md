@@ -39,7 +39,7 @@ data/
 │   ├── train/
 │   ├── val/
 │   └── annotations/
-
+```
 ### GPU Training
 # Phase 1 训练
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase1.py 4
