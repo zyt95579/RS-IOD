@@ -39,8 +39,9 @@ data/
 │   ├── train/
 │   ├── val/
 │   └── annotations/
-### Single GPU Training
-python tools/train.py configs/std/std_r50_1x_dota.py
+### GPU Training
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase1.py 4
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior_phase2.py 4 --amp
 
 ## ⚡ Inference / Testing
 python tools/test.py configs/std/std_r50_1x_dota.py work_dirs/std_r50_1x_dota/latest.pth --eval mAP
