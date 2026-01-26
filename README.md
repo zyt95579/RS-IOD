@@ -42,10 +42,10 @@ data/
 ```
 ### GPU Training
 ```text
-# Phase 1 训练
+# Phase 1 Training
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior/dior_phase1.py 4
 
-# Phase 2 训练 (开启混合精度训练 --amp)
+# Phase 2 Training (--amp)
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh ./configs/gdino_inc/dior/dior_phase2.py 4 --amp
 ```
 
